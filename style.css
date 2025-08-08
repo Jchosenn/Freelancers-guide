@@ -111,13 +111,17 @@ html{
     padding-right: 1.5em;
   }
   .choose__us__div{
-    width: auto;
+    /* width: auto; */
+    width: 28em;
   }
   .choose__us__div h2{
     text-align: center;
   }
   .choose__us__p{
     align-self: center;
+  }
+  .choose__us__p2{
+    text-align: center;
   }
   .second__image__holder{
     align-self: center;
