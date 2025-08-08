@@ -112,7 +112,7 @@ html{
   }
   .choose__us__div{
     /* width: auto; */
-    width: 28em;
+    width: 20em;
   }
   .choose__us__div h2{
     text-align: center;
@@ -125,6 +125,5 @@ html{
   }
   .second__image__holder{
     align-self: center;
-    width: 28em;
   }
 }
