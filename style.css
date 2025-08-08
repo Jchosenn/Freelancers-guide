@@ -17,6 +17,9 @@ html{
 }
 
 @media (width < 768px){
+  .holder{
+    padding-top: 1.5em;
+  }
   .nav__container ul li{
     display: none;
   }
@@ -25,12 +28,15 @@ html{
   }
 
   .hero__section{
+    padding-top: 2em;
     flex-direction: column-reverse;
     align-items: center;
     gap: 3em;
   }
   .hero__content{
     width: auto;
+    justify-content: center;
+    align-items: center;
   }
   .crest{
     text-align: center;
@@ -38,17 +44,29 @@ html{
     padding: 4px 2px;
   }
   .hero__content h1{
-    font-size: 2.1em;
+    font-size: 2em;
+    text-align: center;
   }
+  
   .get-started2{
-    font-size: 15px;
+    font-size: 14px;
     padding: 12px 14px;
+  }
+  .watch__btn{
+    width: 160px;
+    font-size: 14px;
   }
   .rating{
     padding-inline: 0px;
   }
+  .rating p{
+    font-size: 14px;
+  }
   .credibility__div{
     row-gap: 1em;
+    column-gap: 0.5em;
+    padding-inline: 1em;
+    
   }
   .credibility__div span{
     font-size: 12px;
@@ -67,5 +85,41 @@ html{
   }
   .image__background img{
     height: auto;
+  }
+
+  .services__section{
+    flex-direction: column;
+    width: var(--width-2);
+    gap: 1.95em;
+  }
+  .first__body__section h2{
+    text-align: center;
+  }
+
+  .cta__section{
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .cta__section div{
+    width: auto;
+    text-align: center;
+  }
+  .content__container{
+    flex-direction: column-reverse;
+    width: var(--width-1-5);
+    gap: 3.5em;
+    padding-right: 1.5em;
+  }
+  .choose__us__div{
+    width: auto;
+  }
+  .choose__us__div h2{
+    text-align: center;
+  }
+  .choose__us__p{
+    align-self: center;
+  }
+  .second__image__holder{
+    align-self: center;
   }
 }
