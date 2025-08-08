@@ -89,7 +89,7 @@ html{
 
   .services__section{
     flex-direction: column;
-    width: var(--width-4);
+    width: var(--width-3);
     gap: 1.95em;
   }
   .first__body__section h2{
@@ -106,13 +106,11 @@ html{
   }
   .content__container{
     flex-direction: column-reverse;
-    width: var(--width-1-5);
+    justify-content: center;
     gap: 3.5em;
-    padding-right: 1.5em;
   }
   .choose__us__div{
-    /* width: auto; */
-    /* width: 20em; */
+    width: 20em;
   }
   .choose__us__div h2{
     text-align: center;
@@ -125,6 +123,8 @@ html{
   }
   .second__image__holder{
     align-self: center;
-    width: var(--width-3-5);
+  }
+  .second__image__holder img{
+    height: auto;
   }
 }
