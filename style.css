@@ -29,7 +29,7 @@ html{
 
   .hero__section{
     padding-top: 2em;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 3em;
   }
@@ -89,7 +89,7 @@ html{
 
   .services__section{
     flex-direction: column;
-    width: var(--width-2);
+    width: var(--width-4);
     gap: 1.95em;
   }
   .first__body__section h2{
@@ -121,5 +121,6 @@ html{
   }
   .second__image__holder{
     align-self: center;
+    width: 28em;
   }
 }
