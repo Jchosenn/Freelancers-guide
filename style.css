@@ -15,6 +15,9 @@
 html{
   scroll-behavior: smooth;
 }
+.fa-solid{
+  cursor: pointer;
+}
 
 @media (width < 768px){
   .holder{

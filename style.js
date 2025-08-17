@@ -25,7 +25,7 @@ sr.reveal(".hero__content h1", {
 sr.reveal(".image__holder", {
     ...scrollRevealOption,
     delay: 700,
-    origin: "left",
+    origin: "bottom",
 });
 sr.reveal("#p-txt", {
     ...scrollRevealOption,
