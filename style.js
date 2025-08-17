@@ -48,3 +48,22 @@ sr.reveal(".partners", {
     ...scrollRevealOption,
     delay: 900,
 });
+
+
+// Check for saved theme in localStorage or system preference
+    const savedTheme = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+ if (savedTheme) {
+      document.body.setAttribute('data-theme', savedTheme)
+    } else if (prefersDark) {
+      document.body.setAttribute('data-theme', 'dark')
+    }
+
+const themeToggle = document.querySelector("#theme-toggle").addEventListener("click", () => {
+const currentTheme = document.body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      console.log("hello")
+})
