@@ -15,7 +15,7 @@
     <title>Freelancers</title>
 </head>
 <body>
-    <div class="holder px-7 py-4 bg-[#F8F5F2]">
+    <div class="holder px-7 py-4">
     <div class="nav__container font-[Poppins] flex justify-between items-center">
         <h2 class="font-semibold text-2xl text-[0A3641]">Vantage</h2>
         <ul class="flex gap-5 font-medium items-center">
@@ -23,7 +23,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Case Studies</a></li>
             <li><a href="#Services">Services</a></li>
-            <a href="#" class="get-started1 bg-[#0A3641] text-white py-2 px-3 rounded-xl">Get Started</a>
+            <a href="#" class="get-started1 text-[var(--button-text)] py-2 px-3 rounded-xl" style="background-color: var(--button-bg)">Get Started</a>
             <i id="theme-toggle" class="fa-solid fa-moon cursor-pointer"></i>
         </ul>
     </div>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="first__body__section flex flex-col gap-5 py-12 items-center font-[Inter]" id="Services"> 
+    <section class="first__body__section relative flex flex-col gap-5 py-12 items-center font-[Inter]" id="Services"> 
         <p class="bg-[#CCD8DB] text-[#0A3641] font-medium rounded-xl py-1 px-5">Our Expertise</p>
         <h2 class="text-[#0A3641] font-bold text-3xl">Specialized Branding Services</h2>
         <p class="text-[#0A3641] text-center">We offer comprehensive branding solutions tailored to your business needs, helping you stand out in today's competitive market.</p>
@@ -102,7 +102,7 @@
     </div>
     <h3 class="font-bold text-[#0A3641]">Brand Identity Design</h3>
     <p class="text-[14px] text-[#0A3641]">We create distinctive visual identities that communicate your brand's values and resonate with your target audience.</p>
-    <a href="#" class="flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></a>
+    <button class="learn-more flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></button>
     </div>
         <div class=" px-8 py-5 bg-white flex flex-col gap-3 font-[Poppins] rounded-md">
     <div class="w-11 h-11 bg-[#16A34A] flex items-center justify-center rounded-lg">
@@ -113,7 +113,7 @@
     </div>
     <h3 class="font-bold text-[#0A3641]">Marketing Strategy</h3>
     <p class="text-[14px] text-[#0A3641]">Data-driven strategies that position your brand effectively and drive measurable business growth.</p>
-    <a href="#" class="flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></a>
+    <button class="learn-more flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></button>
     </div>
         <div class=" px-8 py-5 bg-white flex flex-col gap-3 font-[Poppins] rounded-md">
     <div class="w-11 h-11 bg-[#9333EA] flex items-center justify-center rounded-lg">
@@ -124,7 +124,7 @@
     </div>
     <h3 class="font-bold text-[#0A3641]">Digital Experience</h3>
     <p class="text-[14px] text-[#0A3641]">Immersive digital experiences that engage users and strengthen your brand's online presence.</p>
-    <a href="#" class="flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></a>
+    <button class="learn-more flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></button>
     </div>
         <div class=" px-8 py-5 bg-white flex flex-col gap-3 font-[Poppins] rounded-md">
     <div class="w-11 h-11 bg-[#D97706] flex items-center justify-center rounded-lg">
@@ -135,9 +135,22 @@
     </div>
     <h3 class="font-bold text-[#0A3641]">Retail & Packaging</h3>
     <p class="text-[14px] text-[#0A3641]">Compelling packaging design and retail experiences that make your products stand out on shelves.</p>
-    <a href="#" class="flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></a>
+    <button class="learn-more flex items-center gap-2 font-medium text-[14px] pt-4">Learn More<i class="fa fa-arrow-right"></i></button>
     </div>
         </div>
+
+        <!-- Modal for the Brand service -->
+         <div class="modal-container hidden">
+             <div class="modal absolute px-5 py-5 flex flex-col justify-center gap-4 rounded-xl">
+                 <h3 class="font-bold text-[#0A3641]">Tesing modal</h3>
+                 <p class="text-[14px] text-[#0A3641]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex assumenda unde eaque sint
+                 accusantium, fugiat fugit corrupti expedita soluta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nihil iste, omnis repellendus vero repellat quis sed dolor facere deserunt quasi odio et recusandae expedita cum provident dolore fugit dolorum?</p>
+                 <div class="flex gap-6 self-center">
+                     <button class="rounded-xl bg-[#0a3641] text-white py-1 px-2 hover:bg-[#051e24] cursor-pointer shadow-xs transition-300">Get Started</button>
+                     <button class="close-modal rounded-xl bg-[#0a3641] text-white py-1 px-3 hover:bg-[#051e24] cursor-pointer shadow-xs transition-300">Close</button>
+                 </div>
+              </div>
+         </div>
     </section>
     <section class="cta__section bg-[#0A3641] flex items-center justify-between py-6 px-8 rounded-lg">
         <div class="font-[Poppins] text-white w-120 flex flex-col gap-3.5">
@@ -183,6 +196,8 @@
         </div>
     </section> 
     </div>
+     <div class="overlay absolute hidden"></div>
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="style.js"></script>
